@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+body {
+  height:100vh;
+  overflow:hidden;
+}
+ 
+.App{
+  width:100vw;
+  display: flex;
+  
+}
+
+.sidenav {
+  width: 35vw;
+  background-image: linear-gradient(to bottom, #fd44d5, #a335f7);
+    
+  color:honeydew;
+  font-size:1.2rem;
+  padding: 3em;
+
+}
+
+.contents {
+  width : 65vw;
+}
+
+.sidenav {
+  height: 100vh;
+}
+
+.navitem {
+  margin:1.5rem auto;
+  text-align:center;
+}
+
+
+.navitem-text {
+  text-decoration:none;
+  color:honeydew;
+}
+
+.active {
+  font-weight:bolder;
+}
+
+.display-picture {
+  border: 1px solid black;
+  border-radius:50%;
+  width: 10rem;
+}
+
+.home{
+  border:1px solid black;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+}
+
+.typing-effect{
+margin: 5rem;
+font-size: 2rem;
+font-weight:500;
+}
+
+.social a {
+ margin: 1rem;
+ font-size: 2rem;
+ color: grey;
+}
+
+.education {
+  
+  border: 1px solid black;
+  margin:1rem;
+  padding: 1rem;
+
+}
+
+.widecard :hover{
+    box-shadow: 10px 10px 5px grey;
+}
+
+.contact {
+  margin: 2rem;
+}
+
+.contact h3 {
+  margin :2rem
+}
+
+.skills {
+  margin :2rem;
+}
+
+.skills.li{
+list-style: none;
+padding: 1rem;
+}
