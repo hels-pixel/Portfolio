@@ -1,6 +1,6 @@
 import Social from "../common/Social";
 
-export default function contact(){
+export default function Contact(){
     return(
         <div className ="content contact">
             <h1>Contact Me</h1>
