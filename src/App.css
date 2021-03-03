@@ -1,104 +1,226 @@
-* {
+*{
   padding: 0;
-  margin: 0;
-  box-sizing:border-box;
+  margin:0;
+  box-sizing: border-box;
 }
-
-body {
-  height:100vh;
-  overflow:hidden;
+body{
+  height: 100vh;
+  overflow: hidden;
+  font-family:'Courier New', Courier, monospace;
+  background-color: lightgrey;
 }
- 
-.App{
-  width:100vw;
+.App {
+  width: 100vw;
   display: flex;
-  
-}
+  flex-direction: row-reverse;
+  }
 
 .sidenav {
-  width: 35vw;
-  background-image: linear-gradient(to bottom, #fd44d5, #a335f7);
-    
-  color:honeydew;
-  font-size:1.2rem;
+  width:  25vw;
+  height: 100vh;
+  background-image: url("img/subtle grunge.jpg");
+  background-size:auto;
   padding: 3em;
+  }
 
-}
+.navitem, .contents, .sidenav {
+  }
 
 .contents {
-  width : 65vw;
-}
-
-.sidenav {
-  height: 100vh;
+  flex: 1;
 }
 
 .navitem {
-  margin:1.5rem auto;
-  text-align:center;
-}
-
+  margin: 1.5rem auto;
+  color: #1F3044;
+    }
 
 .navitem-text {
   text-decoration:none;
-  color:honeydew;
+  color: #1F3044;
+  font-weight: bolder;
+  font-size : 1.5rem;
+  float:inline-start;
+      
 }
 
-.active {
+.active{
   font-weight:bolder;
-}
+  text-indent: 2rem;
+  }
 
-.display-picture {
-  border: 1px solid black;
-  border-radius:50%;
-  width: 10rem;
+.display-picture{
+  border-radius: 50%;
+  width: 12rem;
 }
 
 .home{
-  border:1px solid black;
-  display:flex;
-  flex-direction:column;
-  justify-content: center;
+   display: flex;
+  flex-direction:row;
   align-items:center;
-}
+  color:#1F3044;
+  Margin: 5rem;
+  font: size 2rem;;
+  font-weight: 750;
+    
+  }
 
 .typing-effect{
-margin: 5rem;
-font-size: 2rem;
-font-weight:500;
+  margin:2rem;
+  font-size: 2rem;
+  font-weight: 750;
+  padding-right: 8rem;
+  }
+
+.social a{
+  margin-block-end: 10rem;
+  margin: 1rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color:#ff5a1d;
+  }
+
+  .social:hover{
+    text-shadow: 0 10px 20px #fb9039, 0 6px 6px;;
+  }
+
+.about{
+  margin: 4rem;
+  color: #1F3044;
+  text-align:center;
+    }
+
+.about h1 {
+    color:#ff5a1d;
+    
+  }
+ 
+  .education{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  color:#ff5a1d;
+
+  }
+  .education h1{
+    text-align: center;
+  }
+  .education p1{
+    color:#fdee30;
+    font-size: 25px;
+    text-align: center;
 }
 
-.social a {
- margin: 1rem;
- font-size: 2rem;
- color: grey;
-}
-
-.education {
-  
-  border: 1px solid black;
-  margin:1rem;
+.widecard {
+  border: 0px solid lightgrey;
+  margin: 2rem;
   padding: 1rem;
-
+  color: #1F3044;
+}
+.widecard:hover
+{
+box-shadow: 0 10px 20px #ff5a1d, 0 6px 6px;
+}
+.skills{
+  color:#ff5a1d;
+  margin: 2rem;
+  text-align: center;
 }
 
-.widecard :hover{
-    box-shadow: 10px 10px 5px grey;
+.skills h2{
+  color:#fdee30;
+  font-size: 25px;
+}
+
+.skills li{
+  list-style: none;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: large;
 }
 
 .contact {
   margin: 2rem;
+  padding: 1rem;
+  color:#1F3044;
+  
 }
 
-.contact h3 {
-  margin :2rem
+.contact h1{
+  color: #ff5a1d;
+  text-align: center;
 }
 
-.skills {
-  margin :2rem;
+.contact h2{
+  color:#fdee30;
+  font-size: 25px;
+  text-align:center;
 }
 
-.skills.li{
-list-style: none;
-padding: 1rem;
+.contact h3{
+  color:#ff5a1d;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 2rem;
+ }
+
+ .contact h4{
+  color:#1F3044;
+  font-size:25px;
+  padding-left:2rem;
+  padding-bottom: 2rem;
+ }
+
+ .contact .social{
+   text-align: center;
+   padding:10rem;
+ }
+
+.fas {
+  color:#ff5a1d;
+  font-size: 3rem;
 }
+
+.home p{
+color:#fdee30;
+}
+
+.about p{
+  font-size: medium;
+  font-weight: bold;
+  display: flex;
+  flex-direction:row;
+  text-align: left;
+  padding-top: 5rem;
+  padding-bottom:3rem;
+  }
+
+.about h2{
+  color: #ff5a1d;
+  text-align: center;
+  padding-bottom:2rem;
+  padding-right: 2rem;
+  padding-left : 2rem;
+  padding-top:1rem;
+  font-size:2rem;
+}
+
+.about h3{
+  color:#fdee30;
+  font-size: 25px;;
+}
+
+.work-picture{
+  border-radius:25%;
+  width:6rem;
+  border-width: 4px;
+  box-shadow: darkgrey -4px 4px 4px 4px;
+}
+
+.typewriter-picture{
+  border-radius:25%;
+  width:6rem;
+  border-width:4px;
+  box-shadow: darkgrey -4px 4px 4px 4px;
+}
+  
